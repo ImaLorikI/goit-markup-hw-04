@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <title>WebStudio</title>
   </head>
   <body>
@@ -60,7 +61,7 @@
           <h1 class="fisrt-section-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="fisrt-section-button">
+          <button data-modal-open type="button" class="fisrt-section-button">
             Order Service
           </button>
         </div>
@@ -198,5 +199,11 @@
         </p>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
